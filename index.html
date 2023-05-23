@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,700&
+  family=Open+Sans:ital,wght@0,300;0,400;1,400;1,500;1,600&family=Roboto:wght@100;300;900&family=Work+Sans:wght@200;300;400;500;600;
+  700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="Css/bootstrap.min.css">
+  <link rel="stylesheet" href="Css/all.min.css">
+  <link rel="stylesheet" href="Css/Style.css">
+  <link rel="stylesheet" href="Css/bootstrap.min.css.map">
+  <title>Bootstrab</title>
+</head>
+<body>
+  <!-- فكرة Boot strap واي fraume Work عمموما قايمة على مكتبة مسجل فيها classs كتيرة ومنسقة وانت بتستدعيها وبتعدل عليها  -->
+  <!-- colume في الصفحة == 12 -->
+  <nav class="navbar navbar-expand-lg sticky-top"> <!-- sticky-top == تفضل تنزل معاك لما تعمل اسكرول  -->
+    <div class="container"> <!-- class وهو فاضي كده مفيهوش اللى كلمة واحدة او اسم واحد اسمه class Boxed -->
+      <a class="navbar-brand" href="#">
+        <img src="imges/Screenshot 2023-03-06 171546.png" alt="">
+      </a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!-- ms-auto == margin-start: auto -->
+          <!-- mb-2 == margin-buttom: 2    mb-lg-0 == margin-buttom:0 في الشاشات larg -->
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3  active" aria-current="page" href="#">Home</a>
+          <!--                    p-lg-3 == padding: 3 in larg scraun -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="search ps-3 pe-3 d-none d-lg-block">
+          <!--                       d-none == display: none   d-lg-block == display block in larg scrane -->
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <a href="#" class="btn rounded-pill main-btn">Login</a>
+        <!--  btn-primary كلاس زرار مسجل في boot strap rounded-pill == border-riduse: 30px في الحدود دي -->
+      </div>
+    </div>
+  </nav>
+  <!-- start landing page -->
+  <div class="landing d-flex justify-content-center align-items-center"> <!--d-flex == display: flex-->
+    <div class="text-center text-light"> <!-- text-center دي اللى بتخلي العناصر متوسطنة في الصفحة  -->
+      <!-- text-light => بتلون كل النصوص اللى في الي div ده اللى الابيض  -->
+      <h1 class="fs-3">Tast the Creativity</h1>
+      <p class="fs-6 text-white-50 mb-4">We made awesome graphic and web design</p>
+      <!--      fs-5 == font-size: 5px الخط الصغير  text-whit-50 == الشفافية 50% لما يكون الخلفية غامقة  -->
+      <a href="#" class="btn rounded-pill main-btn">Get Start</a>
+    </div>
+  </div>
+  <!-- End landing page -->
+  <!-- start fearures -->
+  <div class="features text-center pt-5 pb-5">
+    <div class="containe">
+      <div class="main-title mt-5 mb-5 position-relative">
+        <img class="mb-4" src="imges/Screenshot 2023-03-06 171546.png" alt="">
+        <h2>We are Good at</h2>
+        <p class="text-black-50 text-uppercase">some of these stuff under</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4"> <!-- هتاخد 6 colom في الشاشات midum وهتاخد 4 colum في الشاشات الكبيرة  -->
+          <div class="feat"></div>
+          <div class="icon-holder position-relative">
+            <i class="fa-solid fa-1 position-absolute bottom-0 number"></i>
+            <i class="fa-solid fa-pencil fa-4x position-absolute bottom-0 icon"></i>
+          </div>
+          <h4 class="mb-3 mt-3 texu">Graphic Design</h4>
+          <p class="text-black-50 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, perspiciatis.</p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feat"></div>
+          <div class="icon-holder position-relative">
+            <i class="fa-solid fa-2 position-absolute bottom-0 number"></i>
+            <i class="fa-solid fa-tv fa-4x position-absolute bottom-0 icon"></i>
+          </div>
+          <h4 class="mb-3 mt-3 texu">Graphic Design</h4>
+          <p class="text-black-50 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, perspiciatis.</p>
+        </div>
+        <div class="col-md-6 col-lg-4"> 
+          <div class="feat"></div>
+          <div class="icon-holder position-relative">
+            <i class="fa-solid fa-3 position-absolute bottom-0 number"></i>
+            <i class="fa-solid fa-plug fa-4x position-absolute bottom-0 icon"></i>
+          </div>
+          <h4 class="mb-3 mt-3 texu">Graphic Design</h4>
+          <p class="text-black-50 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, perspiciatis.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End fearures -->
+  <div class="our-work text-center pt-5 pb-5">
+    <div class="container">
+      <div class="main-title mt-5 mb-5 position-relative">
+        <img src="imges/Screenshot 2023-03-06 171546.png" alt="" class="as mb-4">
+        <h2>We Make This</h2>
+        <p class="text-black-50 text-uppercase">Prepare to ge Amazed</p>
+      </div>
+      <ul class="list-unstyled d-flex justify-content-center mt-5 mb-5">
+        <li class="active rounded-pill">ALL</li>
+        <li>Design</li>
+        <li>Code</li>
+        <li>Photo</li>
+        <li>App</li>
+      </ul>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3"> <!-- smale  medume large -->
+        <div class="box mb-3 bg-wite" data-work="Application">
+            <img src="imges/Screenshot 2023-03-06 171546.png" alt="" class="img-fluid"> <!-- img-fluid => بيعمل max-width: 100%-->
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3"> <!-- smale  medume large -->
+        <div class="box mb-3 bg-wite" data-work="Application">
+            <img src="imges/Screenshot 2023-03-06 171546.png" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3"> <!-- smale  medume large -->
+        <div class="box mb-3 bg-wite" data-work="Application">
+            <img src="imges/Screenshot 2023-03-06 171546.png" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3"> <!-- smale  medume large -->
+        <div class="box mb-3 bg-wite" data-work="Application">
+            <img src="imges/Screenshot 2023-03-06 171546.png" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mt-5">
+        <a href="#" class="btn rounded-pill main-btn text-uppercase">I Wont More</a>
+      </div>
+    </div>
+  </div>
+  <div class="stuff pt-5">
+    <div class="container">
+      <div class="main-title text-center mt-5 mb-5 position-relative">
+        <img src="imges/Screenshot 2023-03-06 171546.png" alt="" class="as mb-4">
+        <h2>We Make This</h2>
+        <p class="text-black-50 text-uppercase">The Great Team</p>
+      </div>
+      <p class="description text-center mb-5 m-auto text-black-50">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nihil et dolorem porro cupiditate ullam quasi qui sint, 
+        laudantium quam blanditiis molestiae, quo tenetur, maiores rem excepturi expedita natus possimus earum!
+      </p>
+      <div class="row align-items-center">
+        <div class="col-lg-4 mb-4 text-center text-md-start"> <!--text-md-start == هيبقي left في الشاشات large وهيبقى center في الشاشات madume  -->
+          <div class="text">
+            <h4>Retina Design</h4>
+            <p class="text-black-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, aspernatur!</p>
+            <p class="text-black-50 fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quaerat corrupti dolorem voluptatem, consectetur atque excepturi quidem repellat. Suscipit, quo?</p>
+            <a href="#" class="btn rounded-pill main-btn text-uppercase">Order My One</a>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="img">
+            <img src="imges/ls.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="team text-center pb-5 pt-5">
+    <div class="container pb-5 pt-5">
+      <h2 class="fw-bo">Meet THe Team</h2>
+      <p class="text-black-50 mb-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus voluptate
+        voluptates repellat aliquam voluptas architecto veniam?
+      </p>
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="box bg-white">
+            <img class="img-fluid" src="imges/Screenshot 2023-03-06 171546.png" alt="">
+            <h4 class="p-3 text-light">Luke Skywalker</h4>
+            <blockquote class="text-black-50 p-3">"I don't understand how we got by those troops. I thought we were dead."</blockquote>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box bg-white">
+            <img class="img-fluid" src="imges/Screenshot 2023-03-06 171546.png" alt="">
+            <h4 class="p-3 text-light">Luke Skywalker</h4>
+            <blockquote class="text-black-50 p-3">"I don't understand how we got by those troops. I thought we were dead."</blockquote>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box bg-white">
+            <img class="img-fluid" src="imges/Screenshot 2023-03-06 171546.png" alt="">
+            <h4 class="p-3 text-light">Luke Skywalker</h4>
+            <blockquote class="text-black-50 p-3">"I don't understand how we got by those troops. I thought we were dead."</blockquote>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box bg-white">
+            <img class="img-fluid" src="imges/Screenshot 2023-03-06 171546.png" alt="">
+            <h4 class="p-3 text-light">Luke Skywalker</h4>
+            <blockquote class="text-black-50 p-3">"I don't understand how we got by those troops. I thought we were dead."</blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="techs pt-5 pb-5 text-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+          <img class="img-fluid" src="imges/a1.png" alt="">
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+          <img class="img-fluid" src="imges/a2.png" alt="">
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+          <img class="img-fluid" src="imges/a3.png" alt="">
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+          <img class="img-fluid" src="imges/a4.png" alt="">
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+          <img class="img-fluid" src="imges/a1.png" alt="">
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mt-3 mb-3">
+          <img class="img-fluid" src="imges/a2.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="project text-center pt-5 pb-5 text-light">
+    <h2>Start Your PRoject Now</h2>
+    <p class="text-white-50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, ipsum?</p>
+    <div class="d-flex justify-content-center mt-5 mb-5">
+      <a href="#" class="btn rounded-pill main-btn text-uppercase">Start Project</a>
+    </div>
+  </div>
+  <div class="blog pt-5 pb-5">
+    <div class="container">
+      <div class="main-title mt-5 mb-5 position-relative">
+        <img class="ssd mb-4" src="imges/Screenshot 2023-03-06 171546.png" alt="">
+        <h2>We are Good at</h2>
+        <p class="text-black-50 text-uppercase">some of these stuff under</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <img src="imges/Screenshot 2023-03-06 171546.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <span class="text-black-50">Jan 2, 2023</span>
+              <h5 class="card-title">Some Awesome Blog Title Here</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <img src="imges/Screenshot 2023-03-06 171546.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <span class="text-black-50">Jan 2, 2023</span>
+              <h5 class="card-title">Some Awesome Blog Title Here</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <img src="imges/Screenshot 2023-03-06 171546.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <span class="text-black-50">Jan 2, 2023</span>
+              <h5 class="card-title">Some Awesome Blog Title Here</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mt-5 mb-5">
+        <a href="#" class="btn rounded-pill main-btn text-uppercase">More Stories</a>
+      </div>
+    </div>
+  </div>
+  <div class="subscribe pt-5 pb-5 text-center text-md-start">
+    <div class="container">
+      <form class="row align-items-center">
+        <div class="col-md-6 col-lg-3">
+          <div class="fw-bold fs-5 mb-3">Subscribe to Our Newsletter</div>
+        </div>
+        <div class="col-md-6 col-lg-7 mb-5">
+          <input class="dffd w-100 text-light p-2 bg-transparent" type="text" placeholder="Emter Your Email">
+          <!--          w-100 == widthe: 100% -->
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <input class="ffdd btn rounded-pill" type="submit" value="Subscribe">
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="info mb-5">
+            <img src="imges/Screenshot 2023-03-06 171546.png" alt="" class="mb-4">
+            <p class="mb-5">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis doloribus sequi aspernatur quibusdam, vero quasi!
+            </p>
+            <div class="copyright">
+              Created By <span>Graphberry</span>
+              <div>&copy; 2023 - <span>Bondi Inc</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <div class="links">
+            <h5 class="text-light">Links</h5>
+            <ul class="list-unstyled lh-lg"> <!-- lh-lg  ==  lighin-hight: large-->
+              <li>Home</li>
+              <li>Our Services</li>
+              <li>Portfolio</li>
+              <li>Testimonials</li>
+              <li>Support</li>
+              <li>Terms And Condition</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <div class="links">
+            <h5 class="text-light">About Us</h5>
+            <ul class="list-unstyled lh-lg"> <!-- lh-lg  ==  lighin-hight: large-->
+              <li>Sign In </li>
+              <li>Register</li>
+              <li>About Us</li>
+              <li>Blog</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="contact">
+            <h5 class="text-light">Contact Us</h5>
+            <p class="lh-lg mt-3 mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, reiciendis.</p>
+            <a href="#" class="btn rounded-pill main-btn w-100">Graphberry@gmail.com</a>
+            <ul class="d-flex mt-5 list-unstyled gap-3"> <!-- gap-3  بيعمل مسافة بين li-->
+              <li>
+                <a class="d-block text-light" href="#">
+                  <i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i> <!--rounded-circle  == bordr-raduse: 50%-->
+                </a>
+              </li>
+              <li>
+                <a class="d-block text-light" href="#">
+                  <i class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"></i>
+                </a>
+              </li>
+              <li>
+                <a class="d-block text-light" href="#">
+                  <i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i>
+                </a>
+              </li>
+              <li>
+                <a class="d-block text-light" href="#">
+                  <i class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+</html>
